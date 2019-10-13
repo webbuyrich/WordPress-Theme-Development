@@ -123,6 +123,9 @@ function bootstrapwp_scripts() {
 	// adding Bootstrap CSS
 	wp_enqueue_style( 'bootstrapwp-styles', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.2.0', 'all');
 
+	// adding FontAwesome CSS
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.7.0', 'all');
+
 	wp_enqueue_style( 'bootstrapwp-style', get_stylesheet_uri() );
 
 	/* // adding Respond JS
