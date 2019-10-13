@@ -182,3 +182,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+/**
+ * Load Bootstrap Menu.
+ */
+require get_template_directory() . '/inc/bootstrap-nav-walker.php';
+
