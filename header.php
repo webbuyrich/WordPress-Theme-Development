@@ -26,7 +26,7 @@
 
 	<header id="masthead" class="site-header">
 	<nav role="navigation">
-		<div class="navbar navbar-static-top navbar-inverse">
+		<div class="navbar navbar-static-top navbar-default">
 			<div class="container">
 				<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 				<div class="navbar-header">
@@ -43,14 +43,14 @@
 					<?php
  
 					$args = array(
-						'theme_location' => 'primary',
+						'theme_location' => 'menu-1',
 						'depth'      => 2,
 						'container'  => false,
 						'menu_class'     => 'nav navbar-nav navbar-right',
 						'walker'     => new Bootstrap_Walker_Nav_Menu()
 						);
  
-					if (has_nav_menu('primary')) {
+					if (has_nav_menu('menu-1')) {
 						wp_nav_menu($args);
 					}
  
