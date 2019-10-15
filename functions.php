@@ -188,8 +188,17 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 require get_template_directory() . '/inc/bootstrap-nav-walker.php';
 
+
+
+/**
+ * Enable Woocommerce Support.
+ */
 add_action('after_setup_theme', 'bootstrapwp_woocommerce_support');
 
 function bootstrapwp_woocommerce_support(){
 	add_theme_support( 'woocommerce' );
 }
+
+// remove SKU from single product summary page
+// (name of hook, function, priority)
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );

@@ -596,3 +596,11 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+## WooCommerce
+--------------------------------------------------------------*/
+
+.single_add_to_cart_button.fa:before{
+	padding-right: 10px;
+}
