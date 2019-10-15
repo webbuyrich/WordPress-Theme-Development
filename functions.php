@@ -188,3 +188,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 require get_template_directory() . '/inc/bootstrap-nav-walker.php';
 
+add_action('after_setup_theme', 'bootstrapwp_woocommerce_support');
+
+function bootstrapwp_woocommerce_support(){
+	add_theme_support( 'woocommerce' );
+}
