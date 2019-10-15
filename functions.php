@@ -202,3 +202,8 @@ function bootstrapwp_woocommerce_support(){
 // remove SKU from single product summary page
 // (name of hook, function, priority)
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
+// Add SKU back to single product summary
+// placed order using priority
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 15 );
+
